@@ -3,7 +3,6 @@ FROM ubuntu:latest
 # Install required packages and Python 3.10
 RUN apt-get update && apt-get install -y \
     python3.10 \
-    python3.10-distutils \
     curl \
     git \
     && rm -rf /var/lib/apt/lists/*
