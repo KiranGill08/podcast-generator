@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install pip for Python 3.10
 RUN curl -fsSLO https://bootstrap.pypa.io/get-pip.py \
-    && python3.10 get-pip.py \
+    && python get-pip.py \
     && rm get-pip.py
 
 # Ensure that `pip` is available as `pip3` for Python 3.10
